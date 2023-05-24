@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Formulir Biodata</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link ke Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Formulir Biodata</a>
+    </nav>
+
+    <div class="container BIO">
+      <form>
+        <div class="form-group">
+          <label for="name">Nama:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label>Jenis Kelamin:</label>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              id="male"
+              name="gender"
+              value="Laki-laki"
+              required
+            />
+            <label class="form-check-label" for="male">Laki-laki</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              id="female"
+              name="gender"
+              value="Perempuan"
+            />
+            <label class="form-check-label" for="female">Perempuan</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="birth-place">Tempat Lahir:</label>
+          <input
+            type="text"
+            id="birth-place"
+            name="birth-place"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="birth-date">Tanggal Lahir:</label>
+          <input
+            type="date"
+            id="birth-date"
+            name="birth-date"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="education">Riwayat Pendidikan:</label>
+          <textarea
+            id="education"
+            name="education"
+            class="form-control"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="status">Status:</label>
+          <select id="status" name="status" class="form-control">
+            <option value="Belum Menikah">Belum Menikah</option>
+            <option value="Menikah">Menikah</option>
+            <option value="Janda/Duda">Janda/Duda</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="hobby">Hobi:</label>
+          <input
+            type="text"
+            id="hobby"
+            name="hobby"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="address">Alamat:</label>
+          <textarea
+            id="address"
+            name="address"
+            class="form-control"
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="photo">Foto:</label>
+          <input
+            type="file"
+            id="photo"
+            name="photo"
+            class="form-control-file"
+          />
+        </div>
+
+        <button
+          type="button"
+          id="submit-btn"
+          class="btn btn-primary"
+          onclick="submitForm()"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+
+    <div id="output"></div>
+
+    <!-- Link ke Bootstrap JavaScript -->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
