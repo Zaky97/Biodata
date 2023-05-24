@@ -23,7 +23,7 @@ function submitForm() {
     display: none;
   }
 
-  nav{
+  .nav{
     display: none;
   }
 
@@ -67,7 +67,7 @@ function submitForm() {
 </style>
 </head>
 <body>
-<div class="container d-flex justify-content-center">
+<div class="d-flex justify-content-center">
   <div class="card">
     <div class="card-header">
       <h4 class="card-title mb-0">Profil</h4>
@@ -75,7 +75,11 @@ function submitForm() {
     <div class="card-body">
       <table>
         <tbody>
+        <tr>
+        <td colspan="2">
          <img class="img-fluid" width="100%" height="100%" id="photo-preview" src="" alt="">
+        </td>
+        </tr>
           <tr>
             <th scope="row">Nama</th>
             <td>${name}</td>
