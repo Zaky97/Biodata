@@ -23,6 +23,10 @@ function submitForm() {
     display: none;
   }
 
+  nav{
+    display: none;
+  }
+
 #output{
   display: block;
 }
@@ -60,16 +64,10 @@ function submitForm() {
     text-align: left;
   }
 
-  #photo-preview {
-    max-width: 200px;
-    max-height: 200px;
-    display: block;
-    margin: 0 auto;
-  }
 </style>
 </head>
 <body>
-<div class="container">
+<div class="container d-flex justify-content-center">
   <div class="card">
     <div class="card-header">
       <h4 class="card-title mb-0">Profil</h4>
@@ -77,9 +75,7 @@ function submitForm() {
     <div class="card-body">
       <table>
         <tbody>
-          <tr>
-            <td colspan="2"><img class="img-fluid" width="100%" height="100%" id="photo-preview" src="" alt=""></td>
-          </tr>
+         <img class="img-fluid" width="100%" height="100%" id="photo-preview" src="" alt="">
           <tr>
             <th scope="row">Nama</th>
             <td>${name}</td>
